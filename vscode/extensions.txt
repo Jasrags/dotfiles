@@ -22,3 +22,4 @@ seanmcbreen.Spell
 tnaseem.theme-seti
 waderyan.gitblame
 webdokkeren.joinlines
+Shan.code-settings-sync
