@@ -10,9 +10,11 @@ tap 'homebrew/versions'
 tap 'puma/puma'
 tap 'go-delve/delve'
 
+brew 'zsh'
+brew 'zsh-completions'
+
 brew 'go'
 brew 'go-delve/delve/delve'
-
 
 brew 'mysql'
 
@@ -51,4 +53,5 @@ cask 'visual-studio-code'
 cask 'docker-beta'
 cask 'flux'
 cask 'alfred'
-cash 'dash'
+cask 'dash'
+cask 'sequel-pro'
