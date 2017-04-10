@@ -4,6 +4,8 @@ Plug 'shawncplus/phpcomplete.vim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/syntastic'
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 call plug#end()
 
 syntax on
@@ -78,6 +80,9 @@ nnoremap <leader><space> :noh<cr>
 
 " Trim trailing whitespace automatically when saved.
 autocmd BufWritePre * :%s/\s\+$//e
+
+" NERD Tree
+autocmd vimenter * NERDTree
 
 " Restore position when reopening file.
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
