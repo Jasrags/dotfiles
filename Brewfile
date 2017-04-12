@@ -47,6 +47,7 @@ brew 'vim'
 brew 'wget'
 brew 'zsh'
 brew 'zsh-completions'
+brew 'zsh-syntax-highlighting'
 
 cask '1password'
 cask 'alfred'
