@@ -82,7 +82,7 @@ nnoremap <leader><space> :noh<cr>
 autocmd BufWritePre * :%s/\s\+$//e
 
 " NERD Tree
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
 
 " Restore position when reopening file.
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif

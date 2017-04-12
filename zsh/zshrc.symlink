@@ -39,3 +39,5 @@ do
 done
 
 unset config_files
+
+plugins=(git osx brew cask composer docker encode64 git-extras httpie history jsontools nyan urltools web-search wd)
