@@ -10,8 +10,11 @@ alias dockercleanc='printf "\n>>> Deleting stopped containers\n\n" && docker rm 
 # Delete all untagged images.
 alias dockercleani='printf "\n>>> Deleting untagged images\n\n" && docker rmi $(docker images -q -f dangling=true)'
 
+# Delete all ununsed volumes. 
+alias dockercleanp='printf "\n>>> Deleting unused volumnes\n\n" && docker system prune --volumes -f'
+
 # Delete all stopped containers and untagged images.
-alias dockerclean='dockercleanc || true && dockercleani'
+alias dockerclean='dockercleanc || true && dockercleani || true && dockercleanp'
 
 # Run interactive container, e.g., $dki base /bin/bash
 alias dockerki="docker run -i -t -P"
