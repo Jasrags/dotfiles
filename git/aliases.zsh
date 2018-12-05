@@ -29,3 +29,4 @@ alias ghc='git fetch -p'
 
 # Delete all local and remote branches that are merged to master
 alias githc='git checkout master && git pull && git remote update origin --prune && git branch -ar --merged master | grep -v HEAD | grep -v master | grep -v staging | sed "s/origin\///" | xargs -n 1 git push origin --delete && git checkout master && git pull && git branch --merged master | grep -v "master" | grep -v "staging" | xargs -n 1 git branch -d '
+alias ge='git-edit-new'
